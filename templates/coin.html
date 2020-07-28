@@ -1,0 +1,50 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <title>Hello Bitcoin</title>
+    <link
+    rel="stylesheet"
+    href="{{ url_for('static', filename='style.css') }}"
+  />
+</head>
+<body>
+    
+    <table>
+        <caption>Bitcoin Information</caption>
+        <p>{{coinDes}}</p>
+        <thead>
+          <tr>
+            <th scope="col">Currency</th>
+            <th scope="col">Description</th>
+            <th scope="col">Rate</th>
+          </tr>
+        </thead>
+        <tfoot>
+          <tr>
+            <td colspan="3">{{coinTime}}</td>
+          </tr>
+        </tfoot>
+        <tbody>
+          <tr>
+            <th scope="row">USD</th>
+            <td>{{coinUSD_des}}</td>
+            <td>{{coinUSD_rate}}</td>
+          </tr>
+          <tr>
+            <th scope="row">GBP</th>
+            <td>{{coinGBP_des}}</td>
+            <td>{{coinGBP_rate}}</td>
+          </tr>
+          <tr>
+            <th scope="row">EUR</th>
+            <td> {{coinEUR_des}}</td>
+            <td> {{coinEUR_rate}}</td>
+          </tr>
+        </tbody>
+      </table>
+</body>
+</html>
